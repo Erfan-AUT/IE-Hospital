@@ -1,20 +1,27 @@
 <!-- chat/templates/chat/index.html -->
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Chat Rooms</title>
 </head>
+
 <body>
     <p>List of chats:</p>
-    <textarea id="room-name-list" cols="40" rows="5"></textarea><br/>
-    What chat room would you like to enter?<br/>
-    <input id="room-name-input" type="text" size="100"/><br/>
-    <input id="room-name-submit" type="button" value="Enter"/>
+    <textarea id="room-name-list" cols="40" rows="5" , disabled="disabled"></textarea><br />
+    <p id="register-p" style="margin: 0;">Are you already registered?</p>
+    <button type="button" id="yes-button">Yes</button>
+    <button type="button" id="no-button">No</button>
+    <input id="username-input" type="text" size="100" , style="visibility: hidden;" /><br />
+    <br />
+    What chat room would you like to enter?<br />
+    <input id="room-name-input" type="text" size="100" /><br />
+    <input id="room-name-submit" type="button" value="Enter" />
 
     <script>
-        function load() {
-            document.querySelector('#room-name-list').value += "\n";
+        function load_chatlist() {
+            document.querySelector('#room-name-list').value = "";
             var xhr = new XMLHttpRequest();
             xhr.open("GET", window.location.href + "list/");
             xhr.onreadystatechange = () => {
@@ -23,21 +30,68 @@
                     document.querySelector('#room-name-list').value += list.join("\n");
                 }
             }
-            xhr.send(null); 
+            xhr.send(null);
+        }
+
+        function replace_after_click() {
+            document.querySelector("#username-input").style.visibility = "visible";
+            var yesB = document.querySelector("#yes-button");
+            yesB.parentNode.removeChild(yesB);
+            var noB = document.querySelector("#no-button");
+            noB.parentNode.removeChild(noB);
         }
 
         document.querySelector('#room-name-input').focus();
-        document.querySelector('#room-name-input').onkeyup = function(e) {
+        document.querySelector('#room-name-input').onkeyup = (e) => {
             if (e.keyCode === 13) {  // enter, return
                 document.querySelector('#room-name-submit').click();
             }
         };
 
-        document.querySelector('#room-name-submit').onclick = function(e) {
+        document.querySelector("#username-input").onkeyup = (e) => {
+            if (e.keyCode === 13) {
+                sessionStorage.setItem("username",
+                    document.querySelector("#username-input").value
+                )
+            }
+        }
+
+        document.querySelector('#yes-button').onclick = () => {
+            replace_after_click();
+            var regP = document.querySelector("#register-p").innerHTML = "Enter your previous username";
+        }
+
+        document.querySelector("#no-button").onclick = () => {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", window.location.href + "login/");
+            xhr.onreadystatechange = () => {
+                if (xhr.readyState === 4) {
+                    var username = xhr.getResponseHeader("username");
+                    sessionStorage.setItem("username", username);
+                    replace_after_click();
+                    document.querySelector("#register-p").innerHTML = "This is your username";
+                    document.querySelector("#username-input").value = username;
+                }
+            }
+            xhr.send(null);
+        }
+
+        document.querySelector('#room-name-submit').onclick = (_) => {
             var roomName = document.querySelector('#room-name-input').value;
-            window.location.pathname = '/server/rooms/' + roomName + '/';
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", window.location.href + "join/");
+            xhr.setRequestHeader("username", sessionStorage.getItem("username"));
+            xhr.setRequestHeader("room", roomName);
+            xhr.onreadystatechange = () => {
+                if (xhr.readyState === 4) {
+                    alert(xhr.responseText);
+                    window.location.pathname = '/server/rooms/' + roomName + '/';
+                }
+            }
+            xhr.send(null);
         };
-        window.onload = load;
+        window.onload = load_chatlist;
     </script>
 </body>
+
 </html>
