@@ -10,6 +10,7 @@ class ChatRoom(models.Model):
 class User(models.Model):
     username = models.CharField(max_length=8, unique=True)
     last_room = models.ForeignKey(ChatRoom, null=True, on_delete=models.SET_NULL)
+    last_seen = models.DateTimeField(auto_now=True)
     
     def __str__(self):
         return self.username

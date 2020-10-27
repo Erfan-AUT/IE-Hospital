@@ -17,6 +17,9 @@
         'ws://' + window.location.host +
         '/ws/server/rooms/' + roomName + '/');
 
+    var username = sessionStorage.getItem("username");
+    var room = sessionStorage.getItem("room");
+
     chatSocket.onmessage = function(e) {
         var data = JSON.parse(e.data);
         var message = data['message'];
@@ -39,11 +42,36 @@
         var message = messageInputDom.value;
         chatSocket.send(JSON.stringify({
             'message': message,
-            'username': sessionStorage.getItem("username"),
-            'room': sessionStorage.getItem('room'),
+            'username': username,
+            'room': room
         }));
 
         messageInputDom.value = '';
     };
+
+    function logout() {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", window.location.origin + "/server/logout/");
+        xhr.setRequestHeader("room", room);
+        xhr.setRequestHeader("username", username);
+        xhr.send(null);
+    }
+
+    function fetchOldMessages() {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", window.location.origin + "/server/get/");
+        xhr.setRequestHeader("username", username);
+        xhr.onreadystatechange = () => {
+            if (xhr.readyState === 4) {
+                var list = JSON.parse(xhr.responseText);
+                document.querySelector('#chat-log').value += list.join("\n");
+            }
+        }
+        xhr.send(null);
+    }
+
+    window.onload = fetchOldMessages;
+    window.onbeforeunload = logout;
+
 </script>
 </html>

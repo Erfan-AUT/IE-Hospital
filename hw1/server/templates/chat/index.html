@@ -22,6 +22,8 @@
     <script>
         function load_chatlist() {
             document.querySelector('#room-name-list').value = "";
+            document.querySelector('#username-input').value = "";
+            document.querySelector('#room-name-input').value = "";
             var xhr = new XMLHttpRequest();
             xhr.open("GET", window.location.href + "list/");
             xhr.onreadystatechange = () => {
@@ -48,14 +50,6 @@
             }
         };
 
-        document.querySelector("#username-input").onkeyup = (e) => {
-            if (e.keyCode === 13) {
-                sessionStorage.setItem("username",
-                    document.querySelector("#username-input").value
-                )
-            }
-        }
-
         document.querySelector('#yes-button').onclick = () => {
             replace_after_click();
             var regP = document.querySelector("#register-p").innerHTML = "Enter your previous username";
@@ -78,18 +72,18 @@
 
         document.querySelector('#room-name-submit').onclick = (_) => {
             var roomName = document.querySelector('#room-name-input').value;
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", window.location.href + "join/");
-            xhr.setRequestHeader("username", sessionStorage.getItem("username"));
-            xhr.setRequestHeader("room", roomName);
-            xhr.onreadystatechange = () => {
-                if (xhr.readyState === 4) {
-                    alert(xhr.responseText);
-                    sessionStorage.setItem("room", roomName);
-                    window.location.pathname = '/server/rooms/' + roomName + '/';
-                }
+            var allRooms = document.querySelector("#room-name-list").value;
+            if (allRooms.includes(roomName)) {
+                sessionStorage.setItem("room", roomName);
+                sessionStorage.setItem("username",
+                    document.querySelector("#username-input").value
+                )
+                alert("You're connected to " + roomName);
+                window.location.pathname = '/server/rooms/' + roomName + '/';
             }
-            xhr.send(null);
+            else {
+                alert("Room does not exist!");
+            }
         };
         window.onload = load_chatlist;
     </script>
