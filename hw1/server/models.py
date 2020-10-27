@@ -21,3 +21,6 @@ class Message(models.Model):
     room = models.ForeignKey(ChatRoom, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     timestamp = models.DateTimeField(auto_now=True)
+
+    def to_str(self):
+        return str(self.timestamp) + " | " + self.user.username + ": " + self.text

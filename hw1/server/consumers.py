@@ -1,6 +1,7 @@
 from asgiref.sync import async_to_sync
 from channels.generic.websocket import WebsocketConsumer
 import json
+from server.models import User, Message, ChatRoom
 
 class ChatConsumer(WebsocketConsumer):
     def connect(self):
@@ -25,14 +26,20 @@ class ChatConsumer(WebsocketConsumer):
     # Receive message from WebSocket
     def receive(self, text_data):
         text_data_json = json.loads(text_data)
-        message = text_data_json['message']
+        message_text = text_data_json['message']
+        username = text_data_json['username']
+        room_name = text_data_json['room']
 
+        user = User.objects.get(username=username)
+        room = ChatRoom.objects.get(name=room_name)
+        message = Message(text=message_text, room=room, user=user)
+        message.save()
         # Send message to room group
         async_to_sync(self.channel_layer.group_send)(
             self.room_group_name,
             {
                 'type': 'chat_message',
-                'message': message
+                'message': message.to_str()
             }
         )
 

@@ -85,6 +85,7 @@
             xhr.onreadystatechange = () => {
                 if (xhr.readyState === 4) {
                     alert(xhr.responseText);
+                    sessionStorage.setItem("room", roomName);
                     window.location.pathname = '/server/rooms/' + roomName + '/';
                 }
             }
