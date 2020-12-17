@@ -337,12 +337,91 @@ body {
     justify-content: right;
 }
 
-.s {
+.covid-card-image {
     width: 200px;
 }
 
-.right-ccc {
+.right-cc {
     position: relative;
     right: 60%;
     text-align: center;
+}
+
+
+.app-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    padding: 2% 5% 5% 5%;
+    /* width: 10px; */
+}
+
+.app-card {
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    transition: 0.1s;
+    border-radius: 20px;
+    align-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    width: 300px;
+}
+
+.app-container {
+    padding: 15px;
+    border-radius: 15px;
+    width: 300px;
+    justify-content: right;
+}
+
+.right-ac {
+    position: relative;
+    right: 20%;
+    text-align: center;
+}
+
+.left-ac {
+    position: relative;
+    right: 10%;
+    width: 500px;
+    text-align: right;
+}
+
+.app-stores {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 35%;
+    padding: 2% 70% 5% 5%;
+}
+
+.app-card-image {
+    width: 50px;
+}
+
+.app-phone-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    margin-top: 2%;
+}
+
+.app-phone-input {
+    border-radius: 10px 10px 10px 10px;
+    border-right-width: 0px;
+}
+
+.app-btn {
+    background-color: #fb815e;
+    border-radius: 10px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.app-btn:hover {
+    background-color: #fc9c81;
+    cursor: pointer;
+}
+
+.phone-icon {
+    background-color: #fc9c81;
+    padding: 10%;
 }
