@@ -59,7 +59,6 @@ body {
 }
 
 .login-btn {
-    /* box-sizing: border-box; */
     background-color: #ededed;
     border-collapse: separate;
     border-radius: 10px;
@@ -227,7 +226,7 @@ body {
     transition: 0.1s;
     border-radius: 20px;
     width: 500px;
-    height: 500px;
+    /* height: 500px; */
     background-color: #e5f2fe;
     box-sizing: border-box;
     left: 20%;
@@ -245,12 +244,43 @@ body {
 
 .comment-text {
     margin-top: 5%;
-    margin-left: -5%;
+    margin-bottom: 20%;
+    margin-right: 10%;
+    text-align: right;
+    /* margin-left: -5%; */
 }
 
 .comment-box-dr {
     bottom: 0;
     border-top: 2px dashed #6e7794;
-    margin: 0 auto;
-    box-sizing: border-box;
+}
+
+.comment-box-dr-content {
+    position: relative;
+    padding-right: 10%;
+    display: flex;
+    gap: 2%;
+}
+
+.dr-image {
+    position: relative;
+    max-height: 100px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.more-comments {
+    background-color: #fb815e;
+    border-collapse: separate;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    max-height: 50px;
+    padding: 5px;
+    margin-top: 5%;
+}
+
+.more-comments:hover {
+    background-color: #fc643c;
+    cursor: pointer;
 }
