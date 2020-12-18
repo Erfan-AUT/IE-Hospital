@@ -140,6 +140,7 @@
     opacity: 70%;
     margin-left: 20px;
     margin-right: 20px;
+    cursor: pointer;    
 }
 
 .date-list {
@@ -189,6 +190,7 @@
     margin-right: 50px;
     margin-bottom: 10px;
     margin-top: 5px;
+    cursor: pointer;
 }
 
 .times-list {
@@ -296,16 +298,19 @@
 }
 
 .dr-offices-details {
-    border-radius: 10px;
+    border-radius: 20px;
     border-style: solid;
     border-width: thin;
     border: gray;
     margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px 15px 15px 15px !important;
 }
 
 .dr-office-tab {
     overflow: hidden;
     border: 1px solid #ccc;
+    border-radius: 15px 15px 0px 0px;
     background-color: #f1f1f1;
   }
   
@@ -345,10 +350,10 @@
 }
 
 .dr-office-image {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 20px;
     width: 180px;
-    height: 80px;
+    height: 100px;
     border-radius: 10px;
 }
 
@@ -356,4 +361,114 @@
 .dr-office-phone:hover {
       cursor: pointer;
       color:orangered;
+}
+
+.all-user-comments {
+    margin-top: 100px;
+}
+
+.all-comments-tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 15px 15px 0px 0px;
+    background-color: #f1f1f1;
+    display: grid;
+  }
+  
+  /* Style the buttons inside the dr-office-tab */
+.all-comments-tab div {
+    background-color: #f1f1f1;
+    float: right;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    display: flex;
+}
+
+.user-comments-title {
+    margin-top: -5px;
+    margin-right: 5px;
+}
+
+.user-comments-description {
+    color: gray;
+    font-size: 14px;
+    margin-right: 20px;
+    margin-top: -10px;
+}
+
+.all-users-tabcontent {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.user-dr-ranking {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.user-dr-ranking-title {
+    display: flex;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.progressbar {
+    background-color: lightgray;
+    border-radius: 13px; /* (height of inner div) / 2 + padding */
+    padding: 3px;
+    width: 100px;
+    height: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+.progressbar > div {
+     background-color: #1780df;
+     /* width: 40%; Adjust with JavaScript */
+     height: 5px;
+     border-radius: 10px;
+}
+
+#progress-5stars {
+    width: 80%;
+}
+
+#progress-4stars {
+    width: 50%;
+}
+
+#progress-3stars {
+    width: 30%;
+}
+
+#progress-2stars {
+    width: 0%;
+}
+
+#progress-1stars {
+    width: 0%;
+}
+
+.ranking {
+    display: flex;
+}
+
+.avg-wait-time {
+    margin-right: 10px;
+    margin-top: 5px;
+    display: flex;
+}
+
+.actual-avg-time {
+    margin-top: 5%;
+    margin-right: 30%;
 }

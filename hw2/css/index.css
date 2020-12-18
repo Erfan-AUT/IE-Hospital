@@ -4,7 +4,6 @@
     list-style-type: none;
     text-decoration: none;
     font-family: Vazir;
-    /* overflow-y: hidden; */
 }
 
 body {
@@ -252,11 +251,9 @@ body {
     grid-template-columns: 1fr 1fr;
     column-gap: 5%;
     padding: 0% 5% 5% 5%;
-    /* width: 10px; */
 }
 
 .covid-card {
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
     transition: 0.1s;
     border-radius: 20px;
     align-content: center;
@@ -288,11 +285,9 @@ body {
     grid-template-columns: 1fr 1fr;
     column-gap: 5%;
     padding: 2% 5% 5% 5%;
-    /* width: 10px; */
 }
 
 .app-card {
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
     transition: 0.1s;
     border-radius: 20px;
     align-content: center;
@@ -451,7 +446,6 @@ body {
     position: relative;
     left: -10%;
     width: 350px;
-    /* height: 30px; */
 }
 
 .auth-grid {
@@ -460,7 +454,6 @@ body {
     grid-template-columns: 1fr 1fr;
     column-gap: 1px;
     left: -5%;
-    /* padding: 2% 70% 5% 5%; */
     
 }
 
