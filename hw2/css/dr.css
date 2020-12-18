@@ -29,7 +29,7 @@
     margin-top: 20px;
     height: 100%;
     width: 350px;
-    position: relative;
+    position: sticky;
     z-index: 1;
     top: 0;
     right: 20%;
@@ -74,4 +74,167 @@
 .dr-feat-name {
     margin-top: -5px;
     font-size: 12px;
+}
+
+.main-dr-content {
+    position: relative;
+    margin-right: 40%;
+    margin-top: -360px; 
+    margin-left: 25%;
+}
+
+.dr-offices {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: grey;
+    border-width: thin;
+    color: grey;
+    padding: 15px;
+}
+
+.dr-offices-header {
+    margin-right: 10px;
+    display: flex;
+}
+
+.dr-choose-office {
+    color: white;
+    border-radius: 10px;
+    width: 150px;
+    padding: 5px;
+    background-color: #1780df;
+    margin-left: 25px;
+    display: flex;
+}
+
+.dr-offices-helper {
+    color: #1780df;
+}
+
+.choose-arrow {
+    height: 20px;
+    margin-right: 25px;
+    margin-top: 5px;
+}
+
+.dr-dates {
+    border-top: grey;
+    border-width: thin;
+    border-color: gray;
+    border-style: solid;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    display: flex;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.avail-date {
+    background-color: #ededed;
+    color: black;
+    text-align: center;
+    width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 15px;
+    opacity: 70%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.date-list {
+    display: flex;
+}
+
+.avail-date:hover {
+    background-color: #1780df;
+    opacity: 100%;
+    color: white;
+}
+
+.icon {
+    border-color: orangered;
+    border-radius: 50%;
+    border-width: thin;
+    border-style: solid;
+    fill:orangered;
+    margin-top: 25px;
+}
+
+.dr-times {
+    border: grey;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.dr-times-header {
+    display: flex;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
+.times-helper {
+    margin-right: 20px;;
+}
+
+.avail-time {
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    opacity: 70%;
+    margin-left: 20px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.times-list {
+    display: flex;
+}
+
+.unavailable {
+    background-color: #ededed;
+    color: black;
+    text-decoration: line-through;
+}
+
+.available {
+    background-color: orangered;
+    color: white;
+}
+
+.user-comment {
+    border: grey;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.user-rating {
+    background-color: #e5f2fe;
+    color: #1780df;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.feather-star {
+    fill: #1780df;
+}
+
+.rating-stars {
+    margin-top: -10px;
+}
+
+.commenter-count {
+    color: grey;
+    margin-top: -5px;
+    font-size: 14px;
 }
