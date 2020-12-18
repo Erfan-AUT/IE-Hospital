@@ -1,0 +1,124 @@
+* {
+    font-family: Vazir;
+}
+
+.sidenav {
+    height: 100%;
+    width: 25%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #1780df;
+    color: white;
+    overflow-x: hidden;
+    padding-top: 20px;
+    /* align-content: center; */
+    text-align: center;
+  }
+  
+.side-text {
+    position: relative;
+    top: 20%;
+}
+
+.nav-image {
+    width: 250px;
+}
+
+.main {
+    margin-right: 25%; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 10% 10px;
+    align-content: center;
+    text-align: center;
+}
+
+.instruction {
+    font-size: 15px;
+}
+
+.phone-input {
+    position: relative;
+    border-radius: 5px;
+    width: 400px;
+    height: 30px;
+    border-color:#cdcdcd;
+    top: -50px;
+    z-index: 100;
+}
+
+
+.helper-text {
+    position: relative;
+    top: -16px;
+    left: 11.5%;
+    font-size: 12px;
+    z-index: 102;
+    text-align: center;
+}
+
+.helper-text span {
+    background-color: white;
+    padding: 2px;
+}
+
+.send-btn {
+    background-color:#fb815e;
+    border-collapse: separate;
+    border-radius: 10px;
+    color: white;
+    max-height: 50px;
+    padding: 5px;
+    margin-right: 35.5%;
+    margin-top: -40px;
+    text-align: center;
+    width: 400px;
+    height: 30px;
+}
+
+.send-btn:hover {
+    background-color: #fc643c;
+    cursor: pointer;
+}
+
+.send-btn p {
+    margin: 0;
+    position: relative;
+    top: -10px;
+    left: 15%;
+}
+
+.send-btn svg {
+    margin: 0;
+    position: relative;
+    top: -55px;
+    right: 70px;
+}
+
+.referral {
+    color: #fb815e;
+    background-color: white;
+    border-radius: 10px;
+    border-color: #fb815e;
+    border-style: solid;
+    border-width: thin;
+    max-height: 50px;
+    padding: 5px;
+    margin-top: 50px;
+    margin-right: 35.5%;
+    text-align: center;
+    width: 400px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.referral:hover {
+    background-color: #fb815e;
+    color: white;
+}
+
+.referral-text {
+    position: relative;
+    top: -38px;
+}
