@@ -294,3 +294,66 @@
     background-color: lightgray;
     color: #1780df;
 }
+
+.dr-offices-details {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: thin;
+    border: gray;
+    margin-top: 10px;
+}
+
+.dr-office-tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the dr-office-tab */
+.dr-office-tab button {
+    background-color: inherit;
+    color: #1780df;
+    float: right;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+  
+  /* Change background color of buttons on hover */
+.dr-office-tab button:hover {
+    background-color: #ddd;
+}
+  
+  /* Create an active/current dr-office-tablink class */
+.dr-office-tab button.active {
+    background-color: #ccc;
+}
+  
+  /* Style the dr-office-tab content */
+.dr-office-tabcontent {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    display: flex;
+}
+
+#current-tab {
+    background-color: white;
+}
+
+.dr-office-image {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 180px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+
+.dr-office-phone:hover {
+      cursor: pointer;
+      color:orangered;
+}
