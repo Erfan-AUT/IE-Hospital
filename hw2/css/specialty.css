@@ -8,7 +8,7 @@
 }
 
 body {
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 
 .speciality-header {
@@ -177,7 +177,71 @@ body {
     gap: 1px;
 }
 
+.auth-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
 .more-doctors-images img {
     width: 20px;
     aspect-ratio: 1/1;
+}
+
+.specialities-footer {
+    background-color: #1780df;
+    color: white;
+    position: relative;
+    top: -400px;
+}
+
+.specialities-footer-logo img {
+    position: relative;
+    /* left: -20%; */
+    margin-left: 10px;
+}
+
+.specialities-footer-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 15%;
+    padding: 2% 70% 2% 0%;
+    left: 55%;
+}
+
+.specialities-footer-social-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin-top: 20%;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.specialities-footer-middle-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 5%;
+}
+
+.specialities-footer-menu{
+    top: 25%;
+    left: 50%;
+    width: 200px;
+    /* box-sizing: border-box; */
+    cursor: pointer;
+    text-align: center;
+}
+
+.specialities-footer-menu-item  {
+    color: white;
+    padding: 10px 0px;
+    border-top: 1px solid white;
+}
+
+.specialities-footer-menu-item:hover {
+    color: #1780df;
+    background-color: white;
 }
