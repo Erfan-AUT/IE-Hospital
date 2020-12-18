@@ -223,6 +223,8 @@
     border-radius: 10px;
     padding: 5px;
     margin: 10px;
+    width: 100px;
+    height: 100px;
 }
 
 .feather-star {
@@ -233,8 +235,62 @@
     margin-top: -10px;
 }
 
+.comment-box {
+    border-right-width: thin;
+    border-right-style: dotted;
+    border-right-color: grey;
+    padding: 5px
+}
+
 .commenter-count {
     color: grey;
     margin-top: -5px;
     font-size: 14px;
+}
+
+.commenter {
+    margin-top: 5px;
+    color: grey;
+    font-size: 13px;
+}
+
+.commenter svg {
+    width: 20px;
+    margin-left: 2px;
+}
+
+.comment {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.comment-footer {
+    display: flex;
+}
+
+.comment-footer-hoopers {
+    display: flex;
+    z-index: 1000;
+    margin-top: 10px;
+    margin-right: 180px;
+    margin-left: 280px;
+}
+
+.hooper {
+    border-radius: 50%;
+    background-color: grey;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin: 2px;
+}
+
+.hooper-orange {
+    background-color: orangered;
+}
+
+.comment-arrow-down {
+    border-radius: 50%;
+    background-color: lightgray;
+    color: #1780df;
 }
