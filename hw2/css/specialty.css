@@ -10,3 +10,74 @@
 body {
     overflow: scroll;
 }
+
+.speciality-header {
+    position: relative;
+    margin-right: 16%;
+    align-content: center;
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    right: 16%;
+    border-width: thin;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 15px;
+    padding-top: 20px;
+}
+  
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav-title {
+    position: relative;
+    top: -5px;
+    font-size: 16px;
+}
+
+.sidenav-subtitle {
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.sidenav-items {
+    bottom: 0;
+    border-top: 1px solid #6e7794;
+    overflow-y: scroll;
+    margin-bottom: 2px;
+}
+
+.sidenav-alphabet {
+    /* padding: 10% 10% 0% 0%; */
+    position: relative;
+    top: 2px;
+    right: 5%;
+    width: 20px;
+    background-color: #e5f2fe;
+    text-align: center;
+    justify-content: center;
+}
+
+.speciality-name {
+    margin-right: 10px;
+    color: gray;
+}
+
+.speciality-name:hover {
+    color: #57abf8;
+    border-bottom: 2px dotted #57abf8;
+}
