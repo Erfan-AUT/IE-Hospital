@@ -469,6 +469,38 @@
 }
 
 .actual-avg-time {
-    margin-top: 5%;
+    margin-top: 5 %;
     margin-right: 30%;
+}
+
+.smaller {
+    margin-top: 20px;
+    width: 200%;
+    color: grey;
+}
+
+.ct-smaller {
+    font-size: 14px;
+    margin-top: 5px;
+    width: 300px;
+}
+
+.like-dislike {
+    margin-right: 220px;
+    margin-top: -10px;
+    color: green;
+}
+
+.thumbs {
+    color: green;
+}
+
+.like-count {
+    margin-top: 25px;
+    margin-right: -15px;
+    margin-bottom: -20px;
+}
+
+.avg-smaller {
+    /* margin-top: 20%; */
 }
