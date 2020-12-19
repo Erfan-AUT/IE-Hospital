@@ -94,7 +94,7 @@
                     لیست تخصص ها
                 </a>
             </ul>
-            <a href="login.html">
+            <a href="index.html">
                 <img src="./images/site-logo.svg" alt="درمانکده" class="header-nav-image">
             </a>
         </div>
@@ -370,7 +370,7 @@
 
             <div class="dr-office-tabcontent">
                 <img class="dr-office-image" src="./images/dr-map-1.png">
-                <div clas="dr-office-address">
+                <div class="dr-office-address">
                     <h3>آدرس مطب دکتر:</h3>
                     <p>
                         خیابان ابوذر (فلاح) غربی، بعد از بیمارستان ضیائیان، ساختمان پزشکان افرا، پلاک 691
@@ -382,7 +382,7 @@
             </div>
         </div>
 
-        <div clas="all-user-comments">
+        <div class="all-user-comments">
             <div class="all-comments-tab">
                 <div class="all-comments-tablinks">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
@@ -400,117 +400,696 @@
             </div>
 
             <div class="all-users-tabcontent">
-                <div class="user-dr-ranking">
-                    <div clas="user-dr-ranking-title">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="dr-star">
-                            <polygon
-                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                            </polygon>
-                        </svg>
-                        امتیاز به پزشک
-                    </div>
-                    <div class="all-rankings">
-                        <div class="ranking">
-                            <p> ۵ ستاره</p>
-                            <div class="progressbar">
-                                <div id="progress-5stars"></div>
-                            </div>
-                            <p>۲۱</p>
-                        </div>
-
-                        <div class="ranking">
-                            <p> ۴ ستاره</p>
-                            <div class="progressbar">
-                                <div id="progress-4stars"></div>
-                            </div>
-                            <p>۱۱</p>
-                        </div>
-
-                        <div class="ranking">
-                            <p> ۳ ستاره</p>
-                            <div class="progressbar">
-                                <div id="progress-3stars"></div>
-                            </div>
-                            <p>۳</p>
-                        </div>
-
-                        <div class="ranking">
-                            <p> ۲ ستاره</p>
-                            <div class="progressbar">
-                                <div id="progress-2stars"></div>
-                            </div>
-                            <p>۰</p>
-                        </div>
-
-                        <div class="ranking">
-                            <p> ۱ ستاره</p>
-                            <div class="progressbar">
-                                <div id="progress-1stars"></div>
-                            </div>
-                            <p>۰</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="avg-wait-time">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-watch">
-                        <circle cx="12" cy="12" r="7"></circle>
-                        <polyline points="12 9 12 12 13.5 13.5"></polyline>
-                        <path
-                            d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83">
-                        </path>
-                    </svg>
-                    <div class="avg-time-text">
-                        <p>
-                            میانگین زمان انتظار برای ویزیت
-                            <br>
-                        </p>
-                        <p class="actual-avg-time">۴۵ دقیقه</p>
-                    </div>
-                </div>
-
-                <div class="all-comments-tab smaller">
-                    <div class="all-comments-tablinks">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="text-slate feather feather-user">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
-                        <p class="user-comments-title ct-smaller">
-                            نظر حدیقه در تاریخ 22 آبان 1397
-                        </p>
-                        <div class="like-dislike">
-                            <svg data-v-f144f462="" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="thumbs">
-                                <path data-v-f144f462=""
-                                    d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3">
-                                </path>
+                <div class="full-rankings-header">
+                    <div class="user-dr-ranking">
+                        <div class="user-dr-ranking-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="dr-star">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                </polygon>
                             </svg>
-                            <p class="like-count">۴</p>
+                            امتیاز به پزشک
+                        </div>
+                        <div class="all-rankings">
+                            <div class="ranking">
+                                <p> ۵ ستاره</p>
+                                <div class="progressbar">
+                                    <div id="progress-5stars"></div>
+                                </div>
+                                <p>۲۱</p>
+                            </div>
+
+                            <div class="ranking">
+                                <p> ۴ ستاره</p>
+                                <div class="progressbar">
+                                    <div id="progress-4stars"></div>
+                                </div>
+                                <p>۱۱</p>
+                            </div>
+
+                            <div class="ranking">
+                                <p> ۳ ستاره</p>
+                                <div class="progressbar">
+                                    <div id="progress-3stars"></div>
+                                </div>
+                                <p>۳</p>
+                            </div>
+
+                            <div class="ranking">
+                                <p> ۲ ستاره</p>
+                                <div class="progressbar">
+                                    <div id="progress-2stars"></div>
+                                </div>
+                                <p>۰</p>
+                            </div>
+
+                            <div class="ranking">
+                                <p> ۱ ستاره</p>
+                                <div class="progressbar">
+                                    <div id="progress-1stars"></div>
+                                </div>
+                                <p>۰</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avg-wait-time">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-watch">
+                            <circle cx="12" cy="12" r="7"></circle>
+                            <polyline points="12 9 12 12 13.5 13.5"></polyline>
+                            <path
+                                d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83">
+                            </path>
+                        </svg>
+                        <div class="avg-time-text">
+                            <p>
+                                میانگین زمان انتظار برای ویزیت
+                                <br>
+                            </p>
+                            <p class="actual-avg-time">۴۵ دقیقه</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="specific-comment">
-                <div clas="specific-title">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="dr-star">
-                        <polygon
-                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                        </polygon>
-                    </svg>
-                    امتیاز به پزشک
+
+                <div class="specific-comments">
+                    <div class="specific-comments-tab">
+                        <div class="specific-comment-tablink">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                class="man-item" stroke-linejoin="round" class="text-slate feather feather-user">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            <p>
+                                نظر حدیقه در تاریخ 22 آبان 1397
+                            </p>
+                            <div class="like-dislike">
+                                <svg data-v-f144f462="" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="cursor-pointer mx-auto feather feather-thumbs-up">
+                                    <path data-v-f144f462=""
+                                        d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3">
+                                    </path>
+                                </svg>
+                                <p class="like-count">۴</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="all-users-tabcontent">
+                        <div class="specific-comments-specs">
+                            <div class="specs-titles">
+                                <p>
+                                    علت مراجعه
+                                </p>
+                                <p>
+                                    امتیاز به پزشک
+                                </p>
+                            </div>
+                            <div class=specs-specs>
+                                <div>
+                                    پیگیری روند درمان
+                                </div>
+                                <div class="specs-stars">
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="specs-detailed">
+                                با توجه به معاینه هایی که انجام دادن و داروهایی که دادن تا به الان که راضی ام و باید
+                                ازمایشاتم و ببرم بازهم براشون تا ادامه روند درمان و پیگیری کنیم . من تازگی مراجعه داشتمو
+                                به من معرفی کرده بودن دکتر را - خوشحالم پزشکی هستن نزدیکی ما که در کارشون خوبن و نیاز
+                                نیست خیلی راه های دور بریم و دسترسی راحت تری دارن
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specific-comments">
+                    <div class="specific-comments-tab">
+                        <div class="specific-comment-tablink">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                class="man-item" stroke-linejoin="round" class="text-slate feather feather-user">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            <p>
+                                نظر حدیقه در تاریخ 22 آبان 1397
+                            </p>
+                            <div class="like-dislike">
+                                <svg data-v-f144f462="" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="cursor-pointer mx-auto feather feather-thumbs-up">
+                                    <path data-v-f144f462=""
+                                        d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3">
+                                    </path>
+                                </svg>
+                                <p class="like-count">۴</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="all-users-tabcontent">
+                        <div class="specific-comments-specs">
+                            <div class="specs-titles">
+                                <p>
+                                    علت مراجعه
+                                </p>
+                                <p>
+                                    امتیاز به پزشک
+                                </p>
+                            </div>
+                            <div class=specs-specs>
+                                <div>
+                                    پیگیری روند درمان
+                                </div>
+                                <div class="specs-stars">
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="specs-detailed">
+                                با توجه به معاینه هایی که انجام دادن و داروهایی که دادن تا به الان که راضی ام و باید
+                                ازمایشاتم و ببرم بازهم براشون تا ادامه روند درمان و پیگیری کنیم . من تازگی مراجعه داشتمو
+                                به من معرفی کرده بودن دکتر را - خوشحالم پزشکی هستن نزدیکی ما که در کارشون خوبن و نیاز
+                                نیست خیلی راه های دور بریم و دسترسی راحت تری دارن
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specific-comments">
+                    <div class="specific-comments-tab">
+                        <div class="specific-comment-tablink">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                class="man-item" stroke-linejoin="round" class="text-slate feather feather-user">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            <p>
+                                نظر حدیقه در تاریخ 22 آبان 1397
+                            </p>
+                            <div class="like-dislike">
+                                <svg data-v-f144f462="" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="cursor-pointer mx-auto feather feather-thumbs-up">
+                                    <path data-v-f144f462=""
+                                        d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3">
+                                    </path>
+                                </svg>
+                                <p class="like-count">۴</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="all-users-tabcontent">
+                        <div class="specific-comments-specs">
+                            <div class="specs-titles">
+                                <p>
+                                    علت مراجعه
+                                </p>
+                                <p>
+                                    امتیاز به پزشک
+                                </p>
+                            </div>
+                            <div class=specs-specs>
+                                <div>
+                                    پیگیری روند درمان
+                                </div>
+                                <div class="specs-stars">
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="specs-detailed">
+                                با توجه به معاینه هایی که انجام دادن و داروهایی که دادن تا به الان که راضی ام و باید
+                                ازمایشاتم و ببرم بازهم براشون تا ادامه روند درمان و پیگیری کنیم . من تازگی مراجعه داشتمو
+                                به من معرفی کرده بودن دکتر را - خوشحالم پزشکی هستن نزدیکی ما که در کارشون خوبن و نیاز
+                                نیست خیلی راه های دور بریم و دسترسی راحت تری دارن
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specific-comments">
+                    <div class="specific-comments-tab">
+                        <div class="specific-comment-tablink">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                class="man-item" stroke-linejoin="round" class="text-slate feather feather-user">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            <p>
+                                نظر حدیقه در تاریخ 22 آبان 1397
+                            </p>
+                            <div class="like-dislike">
+                                <svg data-v-f144f462="" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="cursor-pointer mx-auto feather feather-thumbs-up">
+                                    <path data-v-f144f462=""
+                                        d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3">
+                                    </path>
+                                </svg>
+                                <p class="like-count">۴</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="all-users-tabcontent">
+                        <div class="specific-comments-specs">
+                            <div class="specs-titles">
+                                <p>
+                                    علت مراجعه
+                                </p>
+                                <p>
+                                    امتیاز به پزشک
+                                </p>
+                            </div>
+                            <div class=specs-specs>
+                                <div>
+                                    پیگیری روند درمان
+                                </div>
+                                <div class="specs-stars">
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="specs-detailed">
+                                با توجه به معاینه هایی که انجام دادن و داروهایی که دادن تا به الان که راضی ام و باید
+                                ازمایشاتم و ببرم بازهم براشون تا ادامه روند درمان و پیگیری کنیم . من تازگی مراجعه داشتمو
+                                به من معرفی کرده بودن دکتر را - خوشحالم پزشکی هستن نزدیکی ما که در کارشون خوبن و نیاز
+                                نیست خیلی راه های دور بریم و دسترسی راحت تری دارن
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specific-comments">
+                    <div class="specific-comments-tab">
+                        <div class="specific-comment-tablink">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                class="man-item" stroke-linejoin="round" class="text-slate feather feather-user">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            <p>
+                                نظر حدیقه در تاریخ 22 آبان 1397
+                            </p>
+                            <div class="like-dislike">
+                                <svg data-v-f144f462="" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="cursor-pointer mx-auto feather feather-thumbs-up">
+                                    <path data-v-f144f462=""
+                                        d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3">
+                                    </path>
+                                </svg>
+                                <p class="like-count">۴</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="all-users-tabcontent">
+                        <div class="specific-comments-specs">
+                            <div class="specs-titles">
+                                <p>
+                                    علت مراجعه
+                                </p>
+                                <p>
+                                    امتیاز به پزشک
+                                </p>
+                            </div>
+                            <div class=specs-specs>
+                                <div>
+                                    پیگیری روند درمان
+                                </div>
+                                <div class="specs-stars">
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                    <svg data-v-41e50536="" xmlns="http://www.w3.org/2000/svg" width=".8em"
+                                        height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="star-rating feather feather-star">
+                                        <polygon data-v-41e50536=""
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="specs-detailed">
+                                با توجه به معاینه هایی که انجام دادن و داروهایی که دادن تا به الان که راضی ام و باید
+                                ازمایشاتم و ببرم بازهم براشون تا ادامه روند درمان و پیگیری کنیم . من تازگی مراجعه داشتمو
+                                به من معرفی کرده بودن دکتر را - خوشحالم پزشکی هستن نزدیکی ما که در کارشون خوبن و نیاز
+                                نیست خیلی راه های دور بریم و دسترسی راحت تری دارن
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
     </div>
+
+    <div class="covid">
+        <br>
+        <h2>
+            نگران کرونا نباشید
+        </h2>
+        <div class="covid-grid">
+            <div class="covid-card right-cc">
+                <div class="covid-card-container">
+                    <img class="covid-card-image" src="./images/pcr.png">
+                </div>
+                تست PCR و آنتی بادی در محل
+                <br> <br>
+                اگر در شهرهای تهران، مشهد، اصفهان، کرج، شیراز و اهواز هستید، می‌توانید بدون مراجعه به آزمایشگاه و در محل
+                مدنظر خود آزمایش کرونا بدهید.
+                <div class="more-comments">
+                    درخواست آزمایش
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="left-arrow">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </div>
+            </div>
+            <div class="covid-card left-cc">
+                <div class="covid-card-container">
+                    <img class="covid-card-image" src="./images/consult.png">
+                </div>
+                مشاوره آنلاین فوری
+                <br> <br>
+                با تست آنلاین کرونا علائم خود را بررسی کنید و اگر مشکوک بودید میتوانید به صورت فوری با پزشکان عمومی
+                مشاوره آنلاین داشته باشید.
+                <br> <br>
+                <div class="more-comments">
+                    دریافت مشاوره فوری
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="left-arrow">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=app">
+        <div class="app-grid">
+            <div class="app-card right-ac">
+                <div class="app-card-container">
+                    <img class="app-card-side" src="./images/socialmask.png">
+                </div>
+                <div class="app-stores">
+                    <img class="app-card-image" src="./images/apple.png">
+                    <img class="app-card-image" src="./images/bazar.png">
+                    <img class="app-card-image" src="./images/playstore.png">
+                </div>
+            </div>
+            <div class="app-card left-ac">
+                <h2> دانلود اپلیکیشن درمانکده</h2>
+                <br>
+                <p>با اپلیکیشن درمانکده با پزشکان و روانشناسان آنلاین مشاوره کنید یا برای ویزیت حضوری آنلاین نوبت
+                    بگیرید. </p>
+                <br>
+                <h3>برای دریافت لینک دانلود، شماره موبایل خود را وارد کنید. </h3>
+
+                <div class="app-phone-container">
+                    <input class="app-phone-input" type="text" dir="rtl" placeholder="مانند ****-۰۹۱۲">
+                    <div class="app-btn">
+                        <div class="phone-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-smartphone text-white "
+                                data-v-bc20ae4e="">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2" data-v-bc20ae4e=""></rect>
+                                <line x1="12" y1="18" x2="12" y2="18" data-v-bc20ae4e=""></line>
+                            </svg>
+                        </div>
+                        <p class="phone-text">ارسال لینک</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="specialities-footer">
+        <div class="specialities-footer-grid">
+            <div class=specialities-footer-logo">
+                <img src="./images/logo-white.svg" alt="درمانکده">
+                <p>
+                    درمانکده، ارائه دهنده خدمات آنلاین سلامت
+                    <br>
+                    (نوبت گیری اینترنتی، مشاوره آنلاین، آزمایش در محل و ...)
+                </p>
+            </div>
+            <div class="specialities-footer-middle-grid">
+                <div class="specialities-footer-menu fm-right">
+                    <div class="specialities-footer-menu-item">
+                        <a>درباره درمانکده</a>
+                    </div>
+                    <div class="specialities-footer-menu-item">
+                        <a>تماس با ما</a>
+                    </div>
+                    <div class="specialities-footer-menu-item">
+                        <a>مجله پزشکی</a>
+                    </div>
+                </div>
+
+                <div class="specialities-footer-menu fm-left">
+                    <div class="specialities-footer-menu-item">
+                        <a>سوالات متداول</a>
+                    </div>
+                    <div class="specialities-footer-menu-item">
+                        <a>قوانین و مقررات</a>
+                    </div>
+                    <div class="specialities-footer-menu-item">
+                        <a>شکایات</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="auth-grid">
+                <img class="auth-image ai-left" src="./images/samandehi.png">
+                <img class="auth-image ai-right" src="./images/enamad1.png">
+            </div>
+
+            <div class="specialities-footer-social-grid">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="text-white p-1 feather feather-instagram" data-v-1c02d2dc="">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" data-v-1c02d2dc=""></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" data-v-1c02d2dc=""></path>
+                    <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" data-v-1c02d2dc=""></line>
+                </svg>
+                <div class="specialities-footer-twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-white p-1 feather feather-twitter" data-v-1c02d2dc="">
+                        <path
+                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                            data-v-1c02d2dc=""></path>
+                    </svg>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="text-white p-1 feather feather-linkedin" data-v-1c02d2dc="">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        data-v-1c02d2dc=""></path>
+                    <rect x="2" y="9" width="4" height="12" data-v-1c02d2dc=""></rect>
+                    <circle cx="4" cy="4" r="2" data-v-1c02d2dc=""></circle>
+                </svg>
+            </div>
+        </div>
     </div>
 </body>
 

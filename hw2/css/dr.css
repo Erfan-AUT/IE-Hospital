@@ -364,7 +364,8 @@
 }
 
 .all-user-comments {
-    margin-top: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .all-comments-tab {
@@ -405,19 +406,30 @@
     border: 1px solid #ccc;
     border-top: none;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 .user-dr-ranking {
     margin-right: 10px;
     margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .user-dr-ranking-title {
     display: flex;
     padding: 6px 12px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-top: none;
+    width: 300px;
+}
+
+.user-dr-ranking-title svg {
+    margin-left: 5px;
+}
+
+.full-rankings-header {
+    display: flex;
+    gap: 50%;
 }
 
 .progressbar {
@@ -458,49 +470,294 @@
     width: 0%;
 }
 
+.all-rankings {
+    width: 300px;
+}
+
 .ranking {
     display: flex;
+    width: 300px;
 }
 
 .avg-wait-time {
-    margin-right: 10px;
-    margin-top: 5px;
+    margin-right: -300px;
+    margin-top: 10px;
     display: flex;
 }
 
 .actual-avg-time {
-    margin-top: 5 %;
-    margin-right: 30%;
+    /* margin-top: 5 %; */
+    /* margin-right: 30%; */
 }
 
-.smaller {
-    margin-top: 20px;
-    width: 200%;
+.specific-comments {
+    margin-bottom: 10px;
+}
+
+.specific-comments-tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 15px 15px 0px 0px;
+    background-color: #f1f1f1;
+    display: grid;
+    width: 635px;
+  }
+  
+  /* Style the buttons inside the dr-office-tab */
+.specific-comments-tab div {
+    background-color: #f1f1f1;
+    float: right;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    display: flex;
+    font-size: 13px;
     color: grey;
 }
 
-.ct-smaller {
-    font-size: 14px;
-    margin-top: 5px;
-    width: 300px;
+.man-item {
+    margin-left: 5px;
 }
 
 .like-dislike {
-    margin-right: 220px;
-    margin-top: -10px;
-    color: green;
+    margin-right: 330px;
+    grid-template-columns: 1fr;
+    margin-top: -15px;
 }
 
-.thumbs {
-    color: green;
+.like-dislike svg {
+    fill: green;
 }
 
 .like-count {
-    margin-top: 25px;
+    color: green;
+    margin-top: 20px;
     margin-right: -15px;
     margin-bottom: -20px;
 }
 
-.avg-smaller {
-    /* margin-top: 20%; */
+.specific-comments-specs{
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.user-dr-ranking-title {
+    display: flex;
+    padding: 6px 12px;
+    border-top: none;
+    width: 300px;
+}
+
+.specs-titles p {
+    margin: 5px;
+}
+
+.specs-specs {
+    margin-right: 10px;
+}
+
+.specs-specs div {
+    margin: 5px;
+}
+
+.specs-detailed {
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 40px;
+    width: 400px;
+}
+
+
+.covid {
+    background-image: url("https://www.darmankade.com/_nuxt/img/75bb3ac.png");
+    background-size: cover;
+    background-color: #1780df;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.covid-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    padding: 0% 5% 5% 5%;
+}
+
+.covid-card {
+    transition: 0.1s;
+    border-radius: 20px;
+    align-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    width: 300px;
+}
+
+.covid-card-container {
+    padding: 15px;
+    border-radius: 15px;
+    width: 300px;
+    justify-content: right;
+}
+
+.covid-card-image {
+    width: 200px;
+}
+
+.right-cc {
+    position: relative;
+    right: 60%;
+    text-align: center;
+}
+
+
+.app-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    padding: 2% 5% 5% 5%;
+}
+
+.app-card {
+    transition: 0.1s;
+    border-radius: 20px;
+    align-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    width: 300px;
+}
+
+.app-container {
+    padding: 15px;
+    border-radius: 15px;
+    width: 300px;
+    justify-content: right;
+}
+
+.right-ac {
+    position: relative;
+    right: 20%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.left-ac {
+    position: relative;
+    right: 10%;
+    width: 500px;
+    text-align: right;
+}
+
+.app-stores {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 35%;
+    padding: 2% 70% 5% 5%;
+}
+
+.app-card-image {
+    width: 50px;
+}
+
+.app-phone-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    margin-top: 2%;
+}
+
+.app-phone-input {
+    border-radius: 10px 10px 10px 10px;
+    border-right-width: 0px;
+}
+
+.app-btn {
+    background-color: #fb815e;
+    border-radius: 10px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.app-btn:hover {
+    background-color: #fc9c81;
+    cursor: pointer;
+}
+
+.phone-icon {
+    background-color: #fc9c81;
+    padding: 10%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.phone-text {
+    margin-right: 10px;
+}
+
+.specialities-footer {
+    background-color: #1780df;
+    color: white;
+    position: relative;
+    /* top: -400px; */
+}
+
+.specialities-footer-logo img {
+    position: relative;
+    /* left: -20%; */
+    margin-left: 10px;
+}
+
+.specialities-footer-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 15%;
+    padding: 2% 70% 2% 0%;
+    left: 55%;
+}
+
+.specialities-footer-social-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin-top: 20%;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.specialities-footer-middle-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 5%;
+}
+
+.specialities-footer-menu{
+    top: 25%;
+    left: 50%;
+    width: 200px;
+    /* box-sizing: border-box; */
+    cursor: pointer;
+    text-align: center;
+}
+
+.specialities-footer-menu-item  {
+    color: white;
+    padding: 10px 0px;
+    border-top: 1px solid white;
+}
+
+.auth-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.specialities-footer-menu-item:hover {
+    color: #1780df;
+    background-color: white;
 }

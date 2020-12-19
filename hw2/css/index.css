@@ -358,6 +358,10 @@ body {
     border-radius: 10px 10px 10px 10px;
 }
 
+.phone-text {
+    margin-right: 10px;
+}
+
 .footer {
     background-color: #1780df;
     color: white;
