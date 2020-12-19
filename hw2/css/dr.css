@@ -295,6 +295,7 @@
     border-radius: 50%;
     background-color: lightgray;
     color: #1780df;
+    cursor: pointer;
 }
 
 .dr-offices-details {
