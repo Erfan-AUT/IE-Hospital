@@ -159,7 +159,7 @@
                         </path>
                     </svg>
                     <p class="dr-feat-name">تجربه </p>
-                    <p>۳۹ سال</p>
+                    <p class="dr-experience-years">۳۹ سال</p>
                 </div>
                 <div class="dr-feat">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
@@ -179,7 +179,7 @@
                         <line x1="1" y1="10" x2="23" y2="10" data-v-543f147a=""></line>
                     </svg>
                     <p class="dr-feat-name">پرداخت آنلاین</p>
-                    <p>دارد</p>
+                    <p class="dr-online-pay">دارد</p>
                 </div>
             </div>
         </div>
@@ -270,7 +270,7 @@
 
         <div class="user-comment">
             <div class="user-rating">
-                <h2>۴.۵</h2>
+                <h2 id="rating-count">۴.۵</h2>
                 <div class="rating-stars">
                     <svg xmlns="http://www.w3.org/2000/svg" width=".7em" height=".7em" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -346,7 +346,7 @@
 
         <div class="dr-offices-details">
             <div class="dr-office-tab">
-                <button class="dr-office-tablinks office-tab-button" id="current-tab" onclick="change_tab(this.classList)">
+                <button class="dr-office-tablinks doc-office" id="current-tab" onclick="change_tab(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="ml-2 feather feather-map">
@@ -356,7 +356,7 @@
                     </svg>
                     اطلاعات مطب
                 </button>
-                <button class="dr-office-tablinks days-tab-button" onclick="change_tab(this.classList)">
+                <button class="dr-office-tablinks doc-times" onclick="change_tab(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="ml-2 feather feather-calendar">
@@ -369,29 +369,50 @@
                 </button>
             </div>
 
-            <div class="dr-days-tabcontent">
+            <div class="tabcontent doc-office">
                 <img class="dr-office-image" src="./images/dr-map-1.png">
                 <div class="dr-office-address">
                     <h3>آدرس مطب دکتر:</h3>
                     <p>
                         خیابان ابوذر (فلاح) غربی، بعد از بیمارستان ضیائیان، ساختمان پزشکان افرا، پلاک 691
-                        <br>
-                        تلفن:
-                        <span class="dr-office-phone">۰۲۱۹۸۴۹۳۷۴۹۳۴۷</span>
                     </p>
+                    تلفن:
+                    <span class="dr-office-phone">۰۲۱۹۸۴۹۳۷۴۹۳۴۷</span>
                 </div>
             </div>
 
-            <div class="dr-office-tabcontent">
-                <img class="dr-office-image" src="./images/dr-map-1.png">
-                <div class="dr-office-address">
-                    <h3>آدرس مطب دکتر:</h3>
-                    <p>
-                        خیابان ابوذر (فلاح) غربی، بعد از بیمارستان ضیائیان، ساختمان پزشکان افرا، پلاک 691
-                        <br>
-                        تلفن:
-                        <span class="dr-office-phone">۰۲۱۹۸۴۹۳۷۴۹۳۴۷</span>
-                    </p>
+            <div class="tabcontent tabcontent-hidden doc-times">
+                <svg display="none" class="svg-success" data-v-c787d50e="" xmlns="http://www.w3.org/2000/svg" width="24px"
+                    height="24px" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="text-dark-mint feather feather-check">
+                    <polyline data-v-c787d50e="" points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <svg display="none" class="svg-fail" data-v-c787d50e="" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                    viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="text-primary feather feather-x">
+                    <line data-v-c787d50e="" x1="18" y1="6" x2="6" y2="18"></line>
+                    <line data-v-c787d50e="" x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+                <div class="avail-date date-0">
+                    شنبه
+                </div>
+                <div class="avail-date date-1">
+                    یک‌شنبه
+                </div>
+                <div class="avail-date date-2">
+                    دوشنبه
+                </div>
+                <div class="avail-date date-3">
+                    سه‌شنبه
+                </div>
+                <div class="avail-date date-4">
+                    چهارشنبه
+                </div>
+                <div class="avail-date date-5">
+                    پنج‌شنبه
+                </div>
+                <div class="avail-date date-6">
+                    جمعه
                 </div>
             </div>
         </div>

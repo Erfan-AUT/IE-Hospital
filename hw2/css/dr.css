@@ -273,6 +273,8 @@
 .comment-footer-hoopers {
     display: flex;
     z-index: 1000;
+    bottom: 10px;
+    /* right: 100px; */
     margin-top: 10px;
     margin-right: 180px;
     margin-left: 280px;
@@ -339,17 +341,14 @@
 }
   
   /* Style the dr-office-tab content */
-.dr-office-tabcontent {
+.tabcontent {
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
     display: flex;
 }
 
-.dr-days-tabcontent {
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
+.tabcontent-hidden {
     display: none;
 }
 
