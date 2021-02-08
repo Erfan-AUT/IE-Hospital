@@ -18,6 +18,8 @@ function init_doctors(data) {
 
     for (let i = 0; i < doc_list.children.length; i++) {
         const el = doc_list.children[i];
+        const el_url = el.getAttribute("href");
+        el.setAttribute("href", el_url + "?id=" + data[i].id);
         // const img_element = dr_el.firstElementChild;
         // img_element.firstElementChild.src = data[i].avatar;
         el.getElementsByClassName("doctor-image")[0].firstElementChild.src = data[i].avatar;

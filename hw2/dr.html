@@ -7,6 +7,7 @@
     <!-- <link rel="stylesheet" type="text/css" href="css/vazir.css"> -->
     <link rel="stylesheet" type="text/css" href="css/dr.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
+    <script type="text/javascript" src="js/dr.js"></script>
     <meta charset='utf-8'>
     <title>دانشکده</title>
 </head>
@@ -108,13 +109,13 @@
                 class="icon-20 feather feather-chevron-left">
                 <polyline points="15 18 9 12 15 6"></polyline>
             </svg>
-            متخصص داخلی
+            <span class="header-specs doctor-speciality">متخصص داخلی</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="icon-20 feather feather-chevron-left">
                 <polyline points="15 18 9 12 15 6"></polyline>
             </svg>
-            <span class="black-name">
+            <span class="header-name doctor-name">
                 آقای دکتر حمیدرضا زرندی
             </span>
         </div>
@@ -141,11 +142,11 @@
                 </svg>
             </div>
             <img class="dr-image" src="./images/dr-3.jpg">
-            <h4>حمیدرضا زرندی</h4>
-            <p class="dr-speciality">
+            <h4 class="doctor-name">حمیدرضا زرندی</h4>
+            <p class="dr-speciality doctor-speciality">
                 فوق تخصص گوارش، کبد و آندوسکوپی
             </p>
-            <p class="dr-licence">
+            <p id="dr-licence">
                 شماره نظام پزشکی : 62005
             </p>
             <div class="dr-features">
@@ -168,7 +169,7 @@
                         <polyline points="12 6 12 12 16 14" data-v-543f147a=""></polyline>
                     </svg>
                     <p class="dr-feat-name">اولین نوبت آزاد</p>
-                    <p>۳۰ آذر</p>
+                    <p id="first-date">۳۰ آذر</p>
                 </div>
                 <div class="dr-feat">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
@@ -345,7 +346,7 @@
 
         <div class="dr-offices-details">
             <div class="dr-office-tab">
-                <button class="dr-office-tablinks" id="current-tab">
+                <button class="dr-office-tablinks office-tab-button" id="current-tab" onclick="change_tab(this.classList)">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="ml-2 feather feather-map">
@@ -355,7 +356,7 @@
                     </svg>
                     اطلاعات مطب
                 </button>
-                <button class="dr-office-tablinks">
+                <button class="dr-office-tablinks days-tab-button" onclick="change_tab(this.classList)">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="ml-2 feather feather-calendar">
@@ -366,6 +367,19 @@
                     </svg>
                     روزهای حضور
                 </button>
+            </div>
+
+            <div class="dr-days-tabcontent">
+                <img class="dr-office-image" src="./images/dr-map-1.png">
+                <div class="dr-office-address">
+                    <h3>آدرس مطب دکتر:</h3>
+                    <p>
+                        خیابان ابوذر (فلاح) غربی، بعد از بیمارستان ضیائیان، ساختمان پزشکان افرا، پلاک 691
+                        <br>
+                        تلفن:
+                        <span class="dr-office-phone">۰۲۱۹۸۴۹۳۷۴۹۳۴۷</span>
+                    </p>
+                </div>
             </div>
 
             <div class="dr-office-tabcontent">
