@@ -8,7 +8,7 @@ function httpGetAsync(theUrl, callback) {
     xmlHttp.send(null);
 }
 
-function cback_1(data) {
+function init_doctors(data) {
     const first_doc = document.getElementsByClassName("doctor-detail-a")[0];
     const doc_list = document.getElementsByClassName("doctors-list")[0];
     for (let index = 1; index < data.length; index++) {
@@ -21,27 +21,52 @@ function cback_1(data) {
         // const img_element = dr_el.firstElementChild;
         // img_element.firstElementChild.src = data[i].avatar;
         el.getElementsByClassName("doctor-image")[0].firstElementChild.src = data[i].avatar;
+
         const detail_element = el.getElementsByClassName("doctor-detail-name")[0];
         detail_element.getElementsByTagName("h3")[0].innerHTML = data[i].name;
         detail_element.getElementsByTagName("h4")[0].innerHTML = data[i].spec;
-        detail_element.getElementsByTagName("p")[0].innerHTML = `( ${data[i].comments} تا نظر)`;
-        //  "( " + data[i].comments + " تا نظر )";
+        detail_element.getElementsByTagName("p")[0].innerHTML = `( ${data[i].comments} نظر)`;
 
         el.getElementsByClassName("doctor-location")[0].innerHTML = data[i].location;
-        el.getElementsByClassName("doctor-experience")[0].innerHTML  = `تجربه: ${data[i].experience_years} سال`;
-        // "تجربه: " + data[i].experience_years + " سال";
+        el.getElementsByClassName("doctor-experience")[0].innerHTML = `تجربه: ${data[i].experience_years} سال`;
         el.getElementsByClassName("doctor-popularity")[0].innerHTML = `${data[i].user_percent} درصد رضایت ملت`;
         el.getElementsByClassName("first-reserve-time")[0].innerHTML = `اولین وقت خالی: ${data[i].first_empty_date}`;
 
         el.getElementsByClassName("doctor-comment")[0].innerHTML = data[i].comment_text;
+        el.setAttribute("stars", data[i].stars);
 
         for (let j = 1; j < data[i].stars + 1; j++) {
             el.getElementsByClassName("star" + j)[0].style.color = "#deb217";
         }
-
     }
 }
 
-window.onload = () => { 
-    httpGetAsync("https://intense-ravine-40625.herokuapp.com/doctors", cback_1);
+function compare_doctor_nodes(a, b) {
+    if (a.getAttribute("stars") < b.getAttribute("stars")) {
+        return -1;
+    }
+    else if (a.getAttribute("stars") > b.getAttribute("stars")) {
+        return 1;
+    }
+    return 0;
+}
+
+window.onload = () => {
+    httpGetAsync("https://intense-ravine-40625.herokuapp.com/doctors", init_doctors);
+    document.getElementsByClassName("sort-by-stars")[0].onclick = () => {
+        const doc_list = document.getElementsByClassName("doctors-list")[0];
+        const doc_nodes = doc_list.children;
+        const doctors = [];
+        for (let i = 0; i < doc_nodes.length; i++) {
+            doctors.push(
+                doc_nodes[i].cloneNode(true)
+            );
+        }
+        doc_list.textContent = "";
+        doctors.sort(compare_doctor_nodes);
+        doctors.forEach((e) => {
+            doc_list.appendChild(e);
+        });
+        console.log("mamad!");
+    }
 }
