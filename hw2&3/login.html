@@ -5,6 +5,7 @@
         type="text/css" />
     <!-- <link rel="stylesheet" type="text/css" href="css/vazir.css"> -->
     <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script type="text/javascript" src="js/login.js"></script>
     <meta charset='utf-8'>
     <title>ورود</title>
 </head>
@@ -22,10 +23,17 @@
 
     <div class="main">
         <p class="instruction">برای ورود شماره همراه خود را وارد کنید.</p>
-        <p class="helper-text"><span>شماره همراه</span></p>
-        <input class="phone-input" type="text" dir="rtl" placeholder="مثلا 09121234567">
-
-        <div class="send-btn">
+        <!-- <p class="helper-text"><span>شماره همراه</span></p> -->
+        <input class="phone-input" id="phone" type="text" dir="rtl" placeholder="مثلا 09121234567">
+        <input class="phone-input" id="username" type="text" dir="rtl" placeholder="مثلا mamad">
+        <input class="phone-input" id="name" type="text" dir="rtl" placeholder="مثلا ممد">
+        <input class="phone-input" id="online-pay" type="text" dir="rtl" placeholder="مثلا yes/no">
+        <input class="phone-input" id="experience" type="text" dir="rtl" placeholder="مثلا 5">
+        <input class="phone-input" id="address" type="text" dir="rtl" placeholder="مثلا daneshga">
+        <input class="phone-input" id="spec" type="text" dir="rtl" placeholder="مثلا اورولوژی">
+        <input class="phone-input" id="week-days" type="text" dir="rtl" placeholder="مثلا 0-1-1-1-1">
+        
+        <div id="send-btn" class="send-btn">
             <p class="send-btn-text">دریافت کد تایید</p>
             <svg data-v-64f32286="" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"
                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -35,7 +43,7 @@
             </svg>
         </div>
         <div class="referral">
-           <p class="referral-text"> کد معرف دارید؟</p>
+           <p id="specs-list" class="referral-text"> کد معرف دارید؟</p>
         </div>
     </div>
 
